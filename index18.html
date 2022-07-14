@@ -1,0 +1,292 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulário para Calculadora - 18º Exemplo</title>
+        <link rel="stylesheet" type="text/css" href="ex18.css">
+        <script src="js/jquery-3.5.1.min.js"></script>
+
+<body>
+    <div class="form">
+            
+            <div class="formcontrol">
+                <h4>Calculadora</h4>
+                <input type="text" value="" id="inputTexto" style="width: 150px;">
+            </div>
+            <div class="formcontrol" id="div1">
+                <input type="button" value="7" id="btn7">
+                <input type="button" value="8" id="btn8">
+                <input type="button" value="9" id="btn9">
+                <input type="button" value="+" id="btnSoma">
+            </div>
+            <div class="formcontrol">
+                <input type="button" value="4" id="btn4">
+                <input type="button" value="5" id="btn5">
+                <input type="button" value="6" id="btn6">
+                <input type="button" value="-" id="btnSubtracao">
+            </div>
+            
+            <div class="formcontrol">
+                <input type="button" value="1" id="btn1">
+                <input type="button" value="2" id="btn2">
+                <input type="button" value="3" id="btn3">
+                <input type="button" value="/" id="btnDivisao">
+            </div>
+            <div class="formcontrol">
+                <input type="button" value="0" id="btn0">
+                <input type="button" value="," id="btnVirgula">  
+                <input type="button" value="%" id="btnReset">    
+                <input type="button" value="*" id="btnMultiplicacao"> 
+                <input type="button"  value="CE" id="btnreset">               
+            </div>
+            <div class="formcontrol">                      
+                <input type="button" value="=" id="btnIgual" style="width: 140px;">                            
+            </div> 
+
+        </div>
+
+</body>
+<script type="text/javascript">
+
+    //Jquery permite para executar uma function após o click em um botão:
+    $("#btn0").click(function(){
+
+        //documentação sobre o método getElementById: https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+        var texto = document.getElementById("inputTexto").value;
+        texto = texto + "0";
+        document.getElementById("inputTexto").value = texto;
+       
+    });
+
+    $("#btn1").click(function(){
+
+        //documentação sobre o método getElementById: https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+        var texto = document.getElementById("inputTexto").value;
+
+        //concatena o caracter 7 na variavel
+        texto = texto + "1";
+
+        //atualiza o input
+        document.getElementById("inputTexto").value = texto;
+    });
+
+    $("#btn2").click(function(){
+
+        //documentação sobre o método getElementById: https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+        var texto = document.getElementById("inputTexto").value;
+
+        //concatena o caracter 8 na variavel
+        texto = texto + "2";
+
+        //atualiza o input
+        document.getElementById("inputTexto").value = texto;
+    });
+    $("#btn3").click(function(){
+
+    //documentação sobre o método getElementById: https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+    var texto = document.getElementById("inputTexto").value;
+
+    //concatena o caracter 8 na variavel
+    texto = texto + "3";
+
+    //atualiza o input
+    document.getElementById("inputTexto").value = texto;
+    });
+    $("#btn4").click(function(){
+
+    //documentação sobre o método getElementById: https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+    var texto = document.getElementById("inputTexto").value;
+
+    //concatena o caracter 8 na variavel
+    texto = texto + "4";
+
+    //atualiza o input
+    document.getElementById("inputTexto").value = texto;
+    });
+    $("#btn5").click(function(){
+
+    //documentação sobre o método getElementById: https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+    var texto = document.getElementById("inputTexto").value;
+
+    //concatena o caracter 8 na variavel
+    texto = texto + "5";
+
+    //atualiza o input
+    document.getElementById("inputTexto").value = texto;
+    });
+    $("#btn6").click(function(){
+
+    //documentação sobre o método getElementById: https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+    var texto = document.getElementById("inputTexto").value;
+
+    //concatena o caracter 8 na variavel
+    texto = texto + "6";
+
+    //atualiza o input
+    document.getElementById("inputTexto").value = texto;
+    });
+    $("#btn7").click(function(){
+
+    //documentação sobre o método getElementById: https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+    var texto = document.getElementById("inputTexto").value;
+
+    //concatena o caracter 8 na variavel
+    texto = texto + "7";
+
+    //atualiza o input
+    document.getElementById("inputTexto").value = texto;
+    });
+    $("#btn8").click(function(){
+    var texto = document.getElementById("inputTexto").value;
+
+    //concatena o caracter 8 na variavel
+    texto = texto + "8";
+
+    //atualiza o input
+    document.getElementById("inputTexto").value = texto;
+    });
+    $("#btn9").click(function(){
+
+    //documentação sobre o método getElementById: https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+    var texto = document.getElementById("inputTexto").value;
+
+    //concatena o caracter 8 na variavel
+    texto = texto + "9";
+
+    //atualiza o input
+    document.getElementById("inputTexto").value = texto;
+    });
+
+    $("#btnSoma").click(function(){
+
+        //documentação sobre o método getElementById: https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+        var texto = document.getElementById("inputTexto").value;
+
+        //concatena o caracter  na variavel
+        texto = texto + "+";
+
+        //atualiza o input
+        document.getElementById("inputTexto").value = texto;
+
+    });
+    $("#btnSubtracao").click(function(){
+        var texto = document.getElementById("inputTexto").value;
+        texto = texto + "-";
+        document.getElementById("inputTexto").value = texto;
+
+    });
+    $("#btnMultiplicacao").click(function(){
+        var texto = document.getElementById("inputTexto").value;
+        texto = texto + "*";
+        document.getElementById("inputTexto").value = texto;
+
+    });
+    $("#btnDivisao").click(function(){
+        var texto = document.getElementById("inputTexto").value;
+        texto = texto + "/";
+        document.getElementById("inputTexto").value = texto;
+
+    });
+    $("#btnVirgula").click(function(){
+        var texto = document.getElementById("inputTexto").value;
+        texto = texto + ",";
+        document.getElementById("inputTexto").value = texto;
+
+    });
+    $("#btnReset").click(function(){
+        var texto = document.getElementById("inputTexto").value;
+        texto = texto + "%";
+        document.getElementById("inputTexto").value = texto;
+
+    });
+    $("#btnreset").click(function(){
+        var texto = document.getElementById("inputTexto").value;
+        texto = "";
+        document.getElementById("inputTexto").value = texto;
+
+    });
+    
+    $("#btnIgual").click(function(){
+
+        var texto = document.getElementById("inputTexto").value;
+
+        //se a variavel texto contiver o caracter + o método indexOf irá retornar o indice desse caracter
+        //documentacao sobre o metodo indexOF : https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf
+        if(texto.indexOf("*") > -1){
+            
+            
+            var p1 = texto.substring(0, texto.indexOf("*"));
+
+            var p2 = texto.substring(texto.indexOf("*")+1, texto.length);
+        
+            //atualiza o input
+            document.getElementById("inputTexto").value = parseInt(p1) * parseInt(p2); 
+            
+
+        }
+        if(texto.indexOf("+") > -1){
+            
+            
+            var p1 = texto.substring(0, texto.indexOf("+"));
+
+            var p2 = texto.substring(texto.indexOf("+")+1, texto.length);
+        
+            //atualiza o input
+            document.getElementById("inputTexto").value = parseInt(p1) + parseInt(p2); 
+            
+
+        }
+        if(texto.indexOf("-") > -1){
+            
+            
+            var p1 = texto.substring(0, texto.indexOf("-"));
+
+            var p2 = texto.substring(texto.indexOf("-")+1, texto.length);
+        
+            //atualiza o input
+            document.getElementById("inputTexto").value = parseInt(p1) - parseInt(p2); 
+            
+
+        }
+        if(texto.indexOf("/") > -1){
+            
+            
+            var p1 = texto.substring(0, texto.indexOf("/"));
+
+            var p2 = texto.substring(texto.indexOf("/")+1, texto.length);
+        
+            //atualiza o input
+            document.getElementById("inputTexto").value = parseInt(p1) / parseInt(p2); 
+            
+
+        }
+        if(texto.indexOf("%") > -1){
+            
+            
+            var p1 = texto.substring(0, texto.indexOf("%"));
+
+            var p2 = texto.substring(texto.indexOf("%")+1, texto.length);
+        
+            //atualiza o input
+            document.getElementById("inputTexto").value = parseInt(p1) * parseInt(p2)/100; 
+            
+
+        }
+        if(texto.indexOf(",") > -1){
+            
+            
+            var p1 = texto.substring(0, texto.indexOf(","));
+
+            var p2 = texto.substring(texto.indexOf(",")+1, texto.length);
+        
+            //atualiza o input
+            document.getElementById("inputTexto").value = parseInt(p1) , parseInt(p1)|| parseInt(p2),parseInt(p2); 
+            
+
+        }
+        
+
+    });
+
+    </script>
+
+</html>  
